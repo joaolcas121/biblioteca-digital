@@ -93,3 +93,14 @@ flowchart TD
     D --> B
     B --> F[subscribe]
     F --> G[ActivityPanel]
+
+    ## Capturas de tela
+
+### Versão desktop
+![Biblioteca Digital no desktop](./screenshots/desktop.png)
+
+### Versão mobile
+![Biblioteca Digital no celular](./screenshots/mobile.png)
+
+### Tema escuro
+![Biblioteca Digital no tema escuro](./screenshots/dark.png)
