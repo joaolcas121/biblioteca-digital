@@ -11,7 +11,7 @@ function FilterBar({ genres, selectedGenre, onSelectGenre }) {
             key={genre}
             onClick={() => onSelectGenre(genre)}
             aria-pressed={selectedGenre === genre}
-            className={`rounded-full px-4 py-2 text-sm font-medium transition ${
+            className={`rounded-full px-4 py-2 text-sm font-medium transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 ${
               selectedGenre === genre
                 ? 'bg-blue-600 text-white'
                 : 'bg-gray-200 text-gray-700 hover:bg-blue-100 dark:bg-gray-800 dark:text-gray-200'
