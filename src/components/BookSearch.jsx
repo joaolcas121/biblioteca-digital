@@ -28,13 +28,16 @@ function BookSearch({ books }) {
       <button
         onClick={searchBooks}
         disabled={loading}
-        className="rounded-lg bg-blue-600 px-5 py-3 text-white hover:bg-blue-700 disabled:opacity-50"
+        className="rounded-lg bg-blue-600 px-5 py-3 text-white hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 disabled:opacity-50"
       >
         {loading ? 'Consultando...' : 'Consultar livros'}
       </button>
 
       {result && (
-        <p className="mt-4 text-gray-700 dark:text-gray-200">
+        <p
+          aria-live="polite"
+          className="mt-4 text-gray-700 dark:text-gray-200"
+        >
           {result}
         </p>
       )}
