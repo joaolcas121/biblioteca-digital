@@ -48,6 +48,10 @@ src/
 └── index.css
 ```
 
+## Regras de empréstimo
+
+O sistema permite emprestar somente livros disponíveis. Quando um livro é emprestado, sua disponibilidade é alterada e ele aparece na área de empréstimos. Ao devolver, ele volta a ficar disponível no catálogo. O contador é atualizado automaticamente conforme os empréstimos realizados.
+
 ## Funcionamento assíncrono
 
 A consulta de disponibilidade utiliza Promise e setTimeout para simular uma consulta de livros.
@@ -80,9 +84,6 @@ npm run dev
 
 Depois, abra o endereço indicado pelo Vite no terminal.
 
-## Autor
-
-Desenvolvido como atividade acadêmica de desenvolvimento web.
 ## Diagrama do Observer
 
 ```mermaid
@@ -93,14 +94,22 @@ flowchart TD
     D --> B
     B --> F[subscribe]
     F --> G[ActivityPanel]
+```
 
-    ## Capturas de tela
+## Capturas de tela
 
 ### Versão desktop
+
 ![Biblioteca Digital no desktop](./screenshots/desktop.png)
 
 ### Versão mobile
+
 ![Biblioteca Digital no celular](./screenshots/mobile.png)
 
 ### Tema escuro
+
 ![Biblioteca Digital no tema escuro](./screenshots/dark.png)
+
+## Autor
+
+Desenvolvido como atividade acadêmica de desenvolvimento web.
